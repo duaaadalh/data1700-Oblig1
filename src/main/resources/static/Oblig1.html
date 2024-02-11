@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billetter</title>
+    <script type="application/javascript">
+        function ekteSprak(arg){
+            console.log("hei " + arg)
+        }
+
+        // 1. lag ett array
+        // 2. hver gang noen trykker på kjøp -> legg til data fra feltene i arrayet
+        // 3. hvis noen trykker på slett -> fjern alle elemenetene fra arrayet
+    </script>
+</head>
+<body>
+
+<h1>
+    Bestilling av kinobilletter
+</h1>
+
+<label for="velg-billett">Velg film:</label>
+<select name="billett" id="velg-billett">
+    <option value="">--Please choose an option--</option>
+    <option value="Reservoir dogs">Resevoir dogs</option>
+    <option value="Shawshank Redemption">Shawshank Redemption</option>
+    <option value="Inception">Inception</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select>
+
+
+<br>
+
+<label for="fornavn">Fornavn:</label>
+
+<input type="text" id="fornavn" name="fornavn" required minlength="4" maxlength="8" size="10" />
+
+<br>
+
+<label for="etternavn">Etternavn</label>
+
+<input type="text" id="etternavn" name="etternavn" required minlength="4" maxlength="8" size="10" />
+
+
+<br>
+
+<label for="tlfnummer">Telefonnummer:</label>
+
+<input type="text" id="tlfnummer" name="tlfnummer" required minlength="4" maxlength="10" size="14" />
+
+
+<br>
+
+<label for="e-post">E-post:</label>
+
+<input type="text" id="e-post" name="e-post" required minlength="8" maxlength="20" size="22" />
+
+<br>
+<br>
+<br>
+<button onclick="ekteSprak('Takk for ditt kjøp')" class="kjop" type="button">Kjøp billetter</button>
+
+<br>
+<br>
+<h2>Alle billetter</h2>
+
+
+<button class="slett" type="button">Slett alle billettene</button>
+
+
+</body>
+</html>
