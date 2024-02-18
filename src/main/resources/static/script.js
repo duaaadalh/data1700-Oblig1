@@ -8,6 +8,7 @@ function filmer() {
     let epost = document.getElementById('e-post').value;
     let telefonnummer = document.getElementById('tlfnummer').value;
 
+
     if (valgtFilm == "") {
         alert("Velg en film");
         return;
